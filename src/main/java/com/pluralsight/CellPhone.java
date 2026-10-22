@@ -8,6 +8,8 @@ public class CellPhone {
     private String carrier;
     private String phoneNumber;
     private String owner;
+
+
     //?Creating cellphone constructor
     public CellPhone() {
 
@@ -63,12 +65,11 @@ public class CellPhone {
 
     @Override
     public String toString() {
-        return "CellPhone{" +
-                "serialNumber=" + serialNumber +
-                ", model='" + model + '\'' +
-                ", carrier='" + carrier + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", owner='" + owner + '\'' +
-                '}';
+        return "CellPhone \n" +
+                "serialNumber = " + serialNumber + "\n" +
+                "model = '" + model + "\n" +
+                "carrier = '" + carrier + "\n" +
+                "phoneNumber =  " + phoneNumber + "\n" +
+                "owner = " + owner;
     }
 }
