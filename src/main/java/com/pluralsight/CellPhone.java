@@ -23,6 +23,15 @@ public class CellPhone {
 
     }
 
+    //!Creating a overloaded cellphone constructor
+    public CellPhone(String model, int serialNumber, String owner, String phoneNumber, String carrier) {
+        this.model = model;
+        this.serialNumber = serialNumber;
+        this.owner = owner;
+        this.phoneNumber = phoneNumber;
+        this.carrier = carrier;
+    }
+
     //!getters and setters to gather cellphone info
     public int getSerialNumber() {
         return serialNumber;
@@ -76,10 +85,15 @@ public class CellPhone {
     }
 
 
-    //!Creating a method for calling
+    //!Creating a dial that calls
     public void dial(String phoneNumber) {
         System.out.printf("%s's phone is calling %s", owner, phoneNumber);
 
+    }
+
+    //!Creating other dial that takes a cellphone not just a STRING
+    public void dial(CellPhone thePhone) {
+        System.out.printf("%s's phone is calling %s", owner, thePhone.getPhoneNumber());
     }
 
 

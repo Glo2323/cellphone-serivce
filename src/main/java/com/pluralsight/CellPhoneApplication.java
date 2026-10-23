@@ -13,6 +13,9 @@ public class CellPhoneApplication {
 
         CellPhone thePhone1 = new CellPhone();
 
+        //*Creating my overloaded phone
+        CellPhone whyPhone = new CellPhone("Iphone 7", 111111, "Messie", "214-563-9342", "Verizon");
+
         //*Intro
         System.out.println("\u001B[31m+++++++++Please enter Info here++++++++\u001B[0m\n");
 
@@ -33,6 +36,10 @@ public class CellPhoneApplication {
 
         System.out.print("\n");
 
+        display(whyPhone);
+
+        System.out.print("\n");
+
         //?Printing out the results of the phone number
         thatPhone2.dial(thePhone1.getPhoneNumber());
 
@@ -42,6 +49,8 @@ public class CellPhoneApplication {
                 \n\n""");
 
         thePhone1.dial(thatPhone2.getPhoneNumber());
+
+        thePhone1.dial(whyPhone);
 
     }
 
