@@ -1,4 +1,7 @@
 package com.pluralsight;
+
+import java.util.Scanner;
+
 //!Creating cellphone class
 public class CellPhone {
 
@@ -7,7 +10,7 @@ public class CellPhone {
     private String model;
     private String carrier;
     private String phoneNumber;
-    private String owner;
+    private String owner;;
 
 
     //?Creating cellphone constructor
@@ -64,12 +67,20 @@ public class CellPhone {
     }
 
     @Override
+    //!Creating the string to display the user answer
     public String toString() {
         return "CellPhone \n" +
                 "serialNumber = " + serialNumber + "\n" +
-                "model = '" + model + "\n" +
-                "carrier = '" + carrier + "\n" +
+                "model = " + model + "\n" +
+                "carrier = " + carrier + "\n" +
                 "phoneNumber =  " + phoneNumber + "\n" +
                 "owner = " + owner;
+    }
+
+    public  static String dial(CellPhone somePhone) {
+        System.out.println();
+        String phoneNumber = "";
+
+        return phoneNumber;
     }
 }

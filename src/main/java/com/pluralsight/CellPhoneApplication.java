@@ -10,6 +10,8 @@ public class CellPhoneApplication {
         //?Connecting the cellphone to the app/ creating the phone
         CellPhone newPhoneWhoDis = new CellPhone();
 
+        CellPhone phone1 = new CellPhone();
+
         //!Creating the scanner
         Scanner input = new Scanner(System.in);
 
@@ -23,7 +25,10 @@ public class CellPhoneApplication {
 
         //?Printing out the results of the phone number
         System.out.println(newPhoneWhoDis.toString());
-        
+
+
+
+        newPhoneWhoDis.dial(phone1);
 
     }
 
@@ -33,5 +38,13 @@ public class CellPhoneApplication {
         System.out.print(question + ": ");
         return scanner.nextLine().trim();
     }
+
+    public  static  void  display(CellPhone somePhone ){
+
+
+    }
+
+
+
 
 }
