@@ -27,6 +27,8 @@ public class CellPhoneApplication {
 
         phoneInfo(thePhone1);
 
+        System.out.print("\n");
+
         //?Using the method to display the info
         display(thatPhone2);
 
@@ -49,6 +51,8 @@ public class CellPhoneApplication {
                 \n\n""");
 
         thePhone1.dial(thatPhone2.getPhoneNumber());
+
+        System.out.print("\n");
 
         thePhone1.dial(whyPhone);
 
