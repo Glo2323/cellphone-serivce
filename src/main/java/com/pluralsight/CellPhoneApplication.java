@@ -16,8 +16,18 @@ public class CellPhoneApplication {
         //*Intro
         System.out.println("\u001B[31m+++++++++Please enter Info here++++++++\u001B[0m\n");
 
-        //?Using the method to ask the questions
+        //*Using the method to ask for phone info
+
+        phoneInfo(thatPhone2);
+
+        System.out.print("\n");
+
+        phoneInfo(thePhone1);
+
+        //?Using the method to display the info
         display(thatPhone2);
+
+        System.out.print("\n");
 
         display(thePhone1);
 
@@ -42,7 +52,7 @@ public class CellPhoneApplication {
     }
 
     //!Method to pull user info via questions
-    public static void display(CellPhone phone2) {
+    public static void phoneInfo(CellPhone phone2) {
 
         //*Creating my scanner
         Scanner input = new Scanner(System.in);
@@ -61,6 +71,26 @@ public class CellPhoneApplication {
 
         //*Asking for user's name
         phone2.setOwner(askQuestion(input, "Who is the owner\n"));
+
+    }
+
+     //!Creating a method that displays user info
+    public static void display(CellPhone somePhone) {
+
+        //*printing out the serial number
+        System.out.println("Serial Number: " + somePhone.getSerialNumber());
+
+        //*printing out the model
+        System.out.println("Model: " + somePhone.getModel());
+
+        //*printing out carrier
+        System.out.println("Carrier: " + somePhone.getCarrier());
+
+        //*printing out the owner
+        System.out.println("Owner: " + somePhone.getOwner());
+
+        //*printing out user phone number
+        System.out.println("Phone Number: " + somePhone.getPhoneNumber());
 
     }
 
