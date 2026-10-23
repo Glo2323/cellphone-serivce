@@ -18,14 +18,17 @@ public class CellPhoneApplication {
 
         //?Using the method to ask the questions
         display(thatPhone2);
+
         display(thePhone1);
 
         //?Printing out the results of the phone number
         thatPhone2.dial(thePhone1.getPhoneNumber());
+
         System.out.print("""
                 \n\n\
                 \u001B[35m===========Second phone calling the other phone===========\u001B[0m
                 \n\n""");
+
         thePhone1.dial(thatPhone2.getPhoneNumber());
 
     }
@@ -34,6 +37,7 @@ public class CellPhoneApplication {
     public static String askQuestion(Scanner scanner, String question) {
 
         System.out.print(question + "~ ");
+
         return scanner.nextLine().trim();
     }
 
@@ -43,11 +47,19 @@ public class CellPhoneApplication {
         //*Creating my scanner
         Scanner input = new Scanner(System.in);
 
-        //*user phone info
+        //*Asking for user's phone serial number
         phone2.setSerialNumber(Integer.parseInt(askQuestion(input, "What is the serial number\n")));
+
+        //*Asking for user's phone model
         phone2.setModel(askQuestion(input, "What model of phone\n"));
+
+        //*Asking for user's phone provider
         phone2.setCarrier(askQuestion(input, "Who is your carrier\n"));
+
+        //*Asking for user's phone number
         phone2.setPhoneNumber(askQuestion(input, "What is your phone number\n"));
+
+        //*Asking for user's name
         phone2.setOwner(askQuestion(input, "Who is the owner\n"));
 
     }
