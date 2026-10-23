@@ -14,7 +14,7 @@ public class CellPhoneApplication {
         CellPhone thePhone1 = new CellPhone();
 
         //!Creating the scanner
-        Scanner input = new Scanner(System.in);
+
 
         //*Intro
         System.out.println("\u001B[31m+++++++++Please enter Info here++++++++\u001B[0m\n");
@@ -30,7 +30,6 @@ public class CellPhoneApplication {
                 \u001B[35m===========Second phone calling the other phone===========\u001B[0m
                 \n\n""");
         thePhone1.dial(thatPhone2.getPhoneNumber());
-
 
     }
 
@@ -53,7 +52,7 @@ public class CellPhoneApplication {
         phone2.setCarrier(askQuestion(input, "Who is your carrier\n"));
         phone2.setPhoneNumber(askQuestion(input, "What is your phone number\n"));
         phone2.setOwner(askQuestion(input, "Who is the owner\n"));
-
+        
 
     }
 
