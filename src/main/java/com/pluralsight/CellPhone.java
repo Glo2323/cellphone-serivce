@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import java.util.Scanner;
-
 //!Creating cellphone class
 public class CellPhone {
 
@@ -25,7 +23,7 @@ public class CellPhone {
 
     }
 
-    //?getters and setters
+    //!getters and setters to gather cellphone info
     public int getSerialNumber() {
         return serialNumber;
     }
@@ -77,10 +75,14 @@ public class CellPhone {
                 "owner = " + owner;
     }
 
-    public  static String dial(CellPhone somePhone) {
-        System.out.println();
-        String phoneNumber = "";
 
-        return phoneNumber;
+    //* Method for calling
+    public void dial(String phoneNumber) {
+        System.out.printf("%s's phone is calling %s", owner, phoneNumber);
+
     }
+
+
+
+
 }
