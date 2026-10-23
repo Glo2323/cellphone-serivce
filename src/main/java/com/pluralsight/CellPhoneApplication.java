@@ -31,6 +31,8 @@ public class CellPhoneApplication {
 
         display(thePhone1);
 
+        System.out.print("\n");
+
         //?Printing out the results of the phone number
         thatPhone2.dial(thePhone1.getPhoneNumber());
 
