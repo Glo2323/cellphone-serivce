@@ -8,13 +8,10 @@ public class CellPhoneApplication {
     //!creating the main method
     public static void main(String[] args) {
 
-        //?creating the phones
+        //*Creating the phones
         CellPhone thatPhone2 = new CellPhone();
 
         CellPhone thePhone1 = new CellPhone();
-
-        //!Creating the scanner
-
 
         //*Intro
         System.out.println("\u001B[31m+++++++++Please enter Info here++++++++\u001B[0m\n");
@@ -43,7 +40,7 @@ public class CellPhoneApplication {
     //!Method to pull user info via questions
     public static void display(CellPhone phone2) {
 
-        //!Creating my scanner
+        //*Creating my scanner
         Scanner input = new Scanner(System.in);
 
         //*user phone info
@@ -52,7 +49,6 @@ public class CellPhoneApplication {
         phone2.setCarrier(askQuestion(input, "Who is your carrier\n"));
         phone2.setPhoneNumber(askQuestion(input, "What is your phone number\n"));
         phone2.setOwner(askQuestion(input, "Who is the owner\n"));
-        
 
     }
 

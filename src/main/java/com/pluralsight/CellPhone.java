@@ -3,7 +3,7 @@ package com.pluralsight;
 //!Creating cellphone class
 public class CellPhone {
 
-    //?Creating cellphone private date members (properties)
+    //!Creating cellphone private date members (properties)
     private int serialNumber;
     private String model;
     private String carrier;
@@ -11,7 +11,7 @@ public class CellPhone {
     private String owner;;
 
 
-    //?Creating cellphone constructor
+    //!Creating cellphone constructor
     public CellPhone() {
 
         //*set defaults for properties of this class
@@ -76,7 +76,7 @@ public class CellPhone {
     }
 
 
-    //* Method for calling
+    //!Creating a method for calling
     public void dial(String phoneNumber) {
         System.out.printf("%s's phone is calling %s", owner, phoneNumber);
 
